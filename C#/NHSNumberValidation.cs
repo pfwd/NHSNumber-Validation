@@ -37,7 +37,7 @@ namespace NHSNumberValidation
             this.NHSNumber = NHSNumber.Trim();
 
             /// Create the multipler array
-            this.multiplers = new int[10];
+            this.multiplers = new int[9];
 
             this.multiplers[1] = 10;
             this.multiplers[2] = 9;
