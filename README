@@ -1,59 +1,58 @@
-<opening tag><h1>NHS Number Validation Examples</h1></closing tag>
-<opening tag><p></closing tag>
-<opening tag>The NHS Number is 10 digits long. The last digit is the "Check Number" or "Check Digit ". This is used to validate the full NHS Number. A calculation is made on the first 9 digits and its sum is compared against the check digit to see if the NHS Number is correct.</closing tag>
-<opening tag></p></closing tag>
-<opening tag></closing tag>
-<opening tag><h2>The calculation </h2></closing tag>
-<opening tag></closing tag>
-<opening tag><p></closing tag>
-<opening tag><strong>1)</strong> Multiply each of the first nine digits by a defined weight.  The weight is shown below:</closing tag>
-<opening tag></p></closing tag>
-<opening tag></closing tag>
-<opening tag><p></closing tag>
-<opening tag>1 - 10</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag>2 - 9</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag>3 - 8</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag>4 - 7</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag>5 - 6</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag>6 - 5</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag>7 - 4</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag>8 - 3</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag>9 - 2</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag>For example if the 2nd digit is 3 then its 3 x 8.  If fourth digit is 7 then its 7 x 4</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag><strong>2)</strong> Get the sum of the 9 multiplications.</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag><strong>3)</strong> Divide this sum by 11 and get the remainder</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag><strong>4)</strong> Subtract 11 from the remainder to get the total</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag><strong>5)</strong> If the total is 11 then the identifier is 0, otherwise the identifier is the total</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag><strong>6)</strong> If the identifier is 10 then the NHS Number is wrong</closing tag>
-<opening tag></p></closing tag>
-<opening tag><p></closing tag>
-<opening tag><strong>7)</strong> If the identifier equals the check number then the NHS number is correct</closing tag>
-<opening tag></p></closing tag>
+NHS Number Validation Examples
+========
+
+The NHS Number is 10 digits long. The last digit is the "Check Number" or "Check Digit ". This is used to validate the full NHS Number. A calculation is made on the first 9 digits and its sum is compared against the check digit to see if the NHS Number is correct.
+
+The calculation
+-----------
+
+
+1) Multiply each of the first nine digits by a defined weight.  The weight is shown below:
+
+
+1 - 10
+
+
+2 - 9
+
+
+3 - 8
+
+
+4 - 7
+
+
+5 - 6
+
+
+6 - 5
+
+
+7 - 4
+
+
+8 - 3
+
+
+9 - 2
+
+
+For example if the 2nd digit is 3 then its 3 x 8.  If fourth digit is 7 then its 7 x 4
+
+
+2) Get the sum of the 9 multiplications.
+
+
+3) Divide this sum by 11 and get the remainder
+
+
+4) Subtract 11 from the remainder to get the total
+
+
+5) If the total is 11 then the identifier is 0, otherwise the identifier is the total
+
+
+6) If the identifier is 10 then the NHS Number is wrong
+
+
+7) If the identifier equals the check number then the NHS number is correct
