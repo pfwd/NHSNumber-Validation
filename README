@@ -1,10 +1,10 @@
-NHS Number Validation Examples
-========
+### NHS Number Validation Examples
+
 
 The NHS Number is 10 digits long. The last digit is the "Check Number" or "Check Digit ". This is used to validate the full NHS Number. A calculation is made on the first 9 digits and its sum is compared against the check digit to see if the NHS Number is correct.
 
-The calculation
------------
+## The calculation
+
 
 
 1) Multiply each of the first nine digits by a defined weight.  The weight is shown below:
@@ -12,30 +12,21 @@ The calculation
 
 1 - 10
 
-
 2 - 9
-
 
 3 - 8
 
-
 4 - 7
-
 
 5 - 6
 
-
 6 - 5
-
 
 7 - 4
 
-
 8 - 3
 
-
 9 - 2
-
 
 For example if the 2nd digit is 3 then its 3 x 8.  If fourth digit is 7 then its 7 x 4
 
