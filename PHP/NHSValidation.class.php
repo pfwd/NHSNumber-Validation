@@ -58,7 +58,10 @@ class NHSNumberValidation
 	// Make sure that the input is valid
 	$this->validateInput();
 	// Perform NHSNumber validation
-	$this->validateionNHSNumber();
+	if($this->isValid)
+	{
+		$this->validateionNHSNumber();
+	}
     }
 
     /**
@@ -71,11 +74,10 @@ class NHSNumberValidation
      */
     protected function validateInput()
     {
-	if (!preg_match("/^{0-9, 9}$/", $this->NHSNumber))
+	if (!preg_match("/^[0-9]{10}$/", $this->NHSNumber))
 	{
 	    $this->isValid = false;
 	}
-	$this->isValid = true;
     }
 
     /**
