@@ -58,7 +58,10 @@ class NHSNumberValidation
 	// Make sure that the input is valid
 	$this->validateInput();
 	// Perform NHSNumber validation
-	$this->validateionNHSNumber();
+	if($this->isValid)
+	{
+		$this->validateionNHSNumber();
+	}
     }
 
     /**
