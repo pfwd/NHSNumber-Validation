@@ -75,7 +75,6 @@ class NHSNumberValidation
 	{
 	    $this->isValid = false;
 	}
-	$this->isValid = true;
     }
 
     /**
