@@ -37,17 +37,7 @@ namespace NHSNumberValidation
             this.NHSNumber = NHSNumber.Trim();
 
             /// Create the multipler array
-            this.multiplers = new int[9];
-
-            this.multiplers[1] = 10;
-            this.multiplers[2] = 9;
-            this.multiplers[3] = 8;
-            this.multiplers[4] = 7;
-            this.multiplers[5] = 6;
-            this.multiplers[6] = 5;
-            this.multiplers[7] = 4;
-            this.multiplers[8] = 3;
-            this.multiplers[9] = 2;
+            this.multiplers = new int[] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
 
             /// Make sure the input is valid
             this.validateInput();
@@ -99,7 +89,7 @@ namespace NHSNumberValidation
                 currentString = this.NHSNumber.Substring(i, 1);
                 
                 currentNumber = Convert.ToInt16(currentString);
-                currentMultipler = this.multiplers[i + 1];
+                currentMultipler = this.multiplers[i];
                 currentSum = currentSum + (currentNumber * currentMultipler);
             }
 
